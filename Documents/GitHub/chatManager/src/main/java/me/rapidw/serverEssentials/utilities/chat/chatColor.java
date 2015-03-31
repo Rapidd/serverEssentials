@@ -1,4 +1,4 @@
-package me.rapidw.serverEssentials.utilities.chat;
+package me.rapidw.serverEssentials.Utilities.Chat;
 
-public class chatColor {
+public class ChatColor {
 }

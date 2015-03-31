@@ -1,4 +1,4 @@
-package me.rapidw.serverEssentials.utilities.chat;
+package me.rapidw.serverEssentials.Utilities.Chat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -8,7 +8,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 
-public class clearChat implements CommandExecutor {
+public class ClearChat implements CommandExecutor {
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player) sender;

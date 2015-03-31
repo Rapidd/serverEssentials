@@ -1,7 +1,7 @@
-package me.rapidw.serverEssentials.utilities.players;
+package me.rapidw.serverEssentials.Utilities.Players;
 
 /**
  * Created by George on 30/03/2015.
  */
-public class tempMute {
+public class TempMute {
 }

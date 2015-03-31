@@ -1,4 +1,4 @@
-package me.rapidw.serverEssentials.utilities.chat;
+package me.rapidw.serverEssentials.Utilities.Chat;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -9,7 +9,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
 
-public class muteChat implements CommandExecutor {
+public class MuteChat implements CommandExecutor {
 
     public static boolean mutechat = false;
 

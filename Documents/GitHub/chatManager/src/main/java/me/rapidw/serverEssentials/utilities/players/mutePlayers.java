@@ -1,4 +1,4 @@
-package me.rapidw.serverEssentials.utilities.players;
+package me.rapidw.serverEssentials.Utilities.Players;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -11,7 +11,7 @@ import org.bukkit.event.player.PlayerChatEvent;
 
 import java.util.ArrayList;
 
-public class mutePlayers implements CommandExecutor {
+public class MutePlayers implements CommandExecutor {
 
     private ArrayList<String> mutedPlayers =  new ArrayList<String>();
 

@@ -1,19 +1,25 @@
 package me.rapidw.serverEssentials.Listeners;
 
-import me.rapidw.serverEssentials.Commands.chat.caster;
-import me.rapidw.serverEssentials.Commands.chat.clearChat;
-import me.rapidw.serverEssentials.Commands.chat.muteChat;
-import me.rapidw.serverEssentials.Commands.players.mutePlayers;
+import me.rapidw.serverEssentials.BanManager.Managers.ControlLogger;
+import me.rapidw.serverEssentials.Utilities.Chat.BroadcastCommand;
+import me.rapidw.serverEssentials.Utilities.Chat.ClearChat;
+import me.rapidw.serverEssentials.Utilities.Chat.MuteChat;
+import me.rapidw.serverEssentials.Utilities.Players.MutePlayers;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin implements Listener {
 
+    protected ControlLogger log;
+
+
     @Override
     public void onEnable() {
-        getCommand("clearchat").setExecutor(new clearChat());
-        getCommand("mutechat").setExecutor(new muteChat());
-        getCommand("mutep").setExecutor(new mutePlayers());
-        getCommand("cast").setExecutor(new caster());
+        //Command executors
+        getCommand("clearchat").setExecutor(new ClearChat());
+        getCommand("mutechat").setExecutor(new MuteChat());
+        getCommand("mutep").setExecutor(new MutePlayers());
+        getCommand("cast").setExecutor(new BroadcastCommand());
     }
+
 }
