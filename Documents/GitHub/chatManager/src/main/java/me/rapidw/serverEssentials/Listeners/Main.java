@@ -20,6 +20,7 @@ public class Main extends JavaPlugin implements Listener {
         getCommand("mutechat").setExecutor(new MuteChat());
         getCommand("mutep").setExecutor(new MutePlayers());
         getCommand("cast").setExecutor(new BroadcastCommand());
+        getCommand("ban").setExecutor(new banCommand());
     }
 
 }
