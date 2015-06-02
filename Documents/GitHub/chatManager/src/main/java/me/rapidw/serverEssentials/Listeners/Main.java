@@ -20,7 +20,32 @@ public class Main extends JavaPlugin implements Listener {
         getCommand("mutechat").setExecutor(new MuteChat());
         getCommand("mutep").setExecutor(new MutePlayers());
         getCommand("cast").setExecutor(new BroadcastCommand());
-        getCommand("ban").setExecutor(new banCommand());
+        getCommand("banp").setExecutor(new BanExecutor());
+        
+        //Loggers
+        
+        Bukkit.getServer().getLogger().info("---[SERVER ESSENTIALS]---");
+        Bukkit.getServer().getLogger().info("STATUS: ENABLED");
+        Bukkit.getServer().getLogger().info("PLUGIN STATUS: STABLE");
+        Bukkit.getServer().getLogger().info("---[SERVER ESSENTIALS]---");
     }
+    
+    public void onDisable() {
+    
 
+        Bukkit.getServer().getLogger().info("---[SERVER ESSENTIALS]---");
+        Bukkit.getServer().getLogger().info("STATUS: DISABLED");
+        Bukkit.getServer().getLogger().info("PLUGIN STATUS: OFFLINE");
+        Bukkit.getServer().getLogger().info("---[SERVER ESSENTIALS]---");
+
+}
+
+    public void onWarn() {
+        
+        Bukkit.getServer().getLogger().info("---[SERVER ESSENTIALS]---");
+        Bukkit.getServer().getLogger().info("WARNING: An error has occured");
+        Bukkit.getServer().getLogger().info("Restart your server to fix!")
+        Bukkit.getServer().getLogger().info("If this continues to happen contact the plugin developer(s)");
+        Bukkit.getServer().getLogger().info("---[SERVER ESSENTIALS]---");
+    }
 }
